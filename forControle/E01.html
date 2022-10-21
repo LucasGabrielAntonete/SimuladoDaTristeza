@@ -8,11 +8,49 @@
 
     //ENTRADA
 
+    const numeroalunos = parseInt(prompt("Informe quantos alunos o professor possui"))
+
+    let alunosMeninos = []
+    let alunasMeninas = []
 
     //PROCESSAMENTO
+    
+
+    for (contador = 1; contador <= numeroalunos; contador++){
+        let nomeAlunos = prompt("Fale o nome dos alunos")
+        let sexo = prompt("Informe M para Masculino e F para feminino").toUpperCase()
+
+        switch (sexo) {
+            case "M": alunosMeninos.push(nomeAlunos)
+                
+                break;
+        
+                case "F": alunasMeninas.push(nomeAlunos)
+
+            default:
+
+                break;
+        }
+    }
+    
 
 
     //SAÍDA
 
+    document.write(`Meninos:${alunosMeninos.sort()} </br> meninas:${alunasMeninas.sort()}`)
+
+
+    //switch (sexo) {
+      //      case "M": alunosMeninos.push(nomeAlunos)
+                
+        //        break;
+        
+          //      case "F": alunasMeninas.push(nomeAlunos)
+
+           // default:
+
+             //   break;
+       // }
     
 </script>
+

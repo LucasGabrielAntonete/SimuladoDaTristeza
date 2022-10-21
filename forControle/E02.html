@@ -13,9 +13,23 @@
 
     //ENTRADA
 
+    const quantidadeAbastecida = parseInt(prompt("Informe quantas vezes vc abasteceu"))
+    const quilometros = Number(prompt("Informe quantos quilometros vc andou"))
+
 
     //PROCESSAMENTO
 
+    let soma = 0;
+
+    for(contador = 1; contador <= quantidadeAbastecida; contador++) {
+        let valorAbastecido = Number(prompt("Informe quanto custou cada abastecimento"))
+        soma = valorAbastecido + soma 
+    }
+
+    let custoQuilometros = soma/quilometros
+
+    document.write(`O custo de cada Km é de R$:${custoQuilometros} </br> O total de dinheiro gasto em combustivel foi de R$:${soma} </br> 
+    O total de quilometos percorridos foi de ${quilometros}KMs`)
 
     //SAÍDA
 
